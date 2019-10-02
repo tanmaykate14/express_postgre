@@ -16,7 +16,10 @@ app.get("/",(req,res)=>{
 res.json({Info:"Welcome to Express/PostgreAPI page"})
 })
 
+
 app.get("/getCustomers",db.getCustomers);
+
+app.get("/getOneCustomer/:id",db.getOneCustomer)
 
 
 
